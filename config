@@ -224,6 +224,9 @@ hide_edge_borders --i3 smart
 default_border pixel 2
 smart_borders on
 
+# Turn of bluetooth on startup
+exec rfkill toggle bluetooth
+
 #
 # Status Bar:
 #

@@ -20,13 +20,13 @@ set $right l
 set $term kitty
 # Your preferred application launcher
 # set $menu wmenu-run
-set $menu wofi --show=run --lines=10 | xargs swaymsg exec
+set $menu wofi --show=run --lines=10 --term=$term | xargs swaymsg exec
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg $HOME/Downloads/x.jpeg fill
+output * bg wallpaper-dark.png fill
 #
 # Example configuration:
 #

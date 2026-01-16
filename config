@@ -227,6 +227,10 @@ smart_borders on
 # Turn of bluetooth on startup
 exec rfkill toggle bluetooth
 
+# Clipboard manager setup
+exec wl-paste --watch cliphist store
+bindsym $mod+c exec cliphist list | wofi --show=dmenu --prompt="cliphist" | cliphist decode | wl-copy
+
 #
 # Status Bar:
 #
